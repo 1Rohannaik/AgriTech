@@ -403,7 +403,7 @@ const MobileApp = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Smart Alerts</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Get instant notifications about critical farm conditions in Indiai, Hindi, or English.
+                    Get instant notifications about critical farm conditions in regional languages, Hindi, or English.
                   </p>
                 </div>
               </div>

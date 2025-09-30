@@ -14,6 +14,8 @@ import Hardware from './pages/Hardware';
 import SuccessMap from './pages/SuccessMap';
 import Solution from './pages/Solution';
 import MobileApp from './pages/MobileApp';
+import Auth from './pages/Auth';
+import FarmerSchemes from './pages/FarmerSchemes';
 
 function App() {
   const { initializeTheme } = useThemeStore();
@@ -30,6 +32,8 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Auth />} />
+            <Route path="/schemes" element={<FarmerSchemes />} />
             <Route path="/roi-calculator" element={<ROICalculator />} />
             <Route path="/hardware" element={<Hardware />} />
             <Route path="/success-map" element={<SuccessMap />} />

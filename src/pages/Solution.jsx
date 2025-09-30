@@ -148,7 +148,7 @@ const Solution = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Smart Notifications</h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Receive alerts in Indiai, Hindi, or English on your phone</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Receive alerts in regional languages, Hindi, or English on your phone</p>
                 </div>
               </div>
 

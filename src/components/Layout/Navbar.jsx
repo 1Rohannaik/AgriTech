@@ -4,6 +4,7 @@ import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import useLanguageStore from '../../store/useLanguageStore';
 import useThemeStore from '../../store/useThemeStore';
+import BrainLogo from '../ui/BrainLogo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const Navbar = () => {
 
   const navItems = [
     { path: '/', label: t('nav.home') },
+    { path: '/schemes', label: 'Schemes' },
     { path: '/roi-calculator', label: t('nav.roi') },
     { path: '/hardware', label: t('nav.hardware') },
     { path: '/success-map', label: t('nav.map') },
@@ -43,10 +45,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            {/* <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">A</span>
-            </div> */}
+          <Link to="/" className="flex items-center space-x-3">
+            <BrainLogo className="w-8 h-8" color="#059669" />
             <span className="text-xl font-bold text-gray-900 dark:text-white">AgriTech</span>
           </Link>
 
@@ -116,10 +116,10 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <Link
-              to="/"
+              to="/login"
               className="bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors duration-200"
             >
-              {t('hero.cta')}
+              Get Started
             </Link>
           </div>
 
@@ -204,11 +204,11 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <Link
-                  to="/"
+                  to="/login"
                   onClick={() => setIsOpen(false)}
                   className="block px-3 py-2 text-base font-medium text-white bg-primary-600 rounded-md hover:bg-primary-700 transition-colors duration-200"
                 >
-                  {t('hero.cta')}
+                  Get Started
                 </Link>
               </div>
             </motion.div>
