@@ -88,7 +88,7 @@ const useLanguageStore = create(
           'nav.app': 'ਮੋਬਾਈਲ ਐਪ',
           
           // Hero Section
-          'hero.title': 'ਪੰਜਾਬ ਦੇ ਭਵਿੱਖ ਲਈ ਸਮਾਰਟ ਖੇਤੀ',
+          'hero.title': 'ਭਾਰਤ ਦੇ ਭਵਿੱਖ ਲਈ ਸਮਾਰਟ ਖੇਤੀ',
           'hero.subtitle': 'IoT-ਸੰਚਾਲਿਤ ਸਟੀਕ ਖੇਤੀ ਜੋ ਪਾਣੀ ਬਚਾਉਂਦੀ ਹੈ, ਪੈਦਾਵਾਰ ਵਧਾਉਂਦੀ ਹੈ, ਅਤੇ ਮੁਨਾਫੇ ਨੂੰ ਵੱਧ ਤੋਂ ਵੱਧ ਬਣਾਉਂਦੀ ਹੈ',
           'hero.cta': 'ਫੀਲਡ ਡੈਮੋ ਬੁੱਕ ਕਰੋ',
           'hero.stats.farmers': '10,000+ ਕਿਸਾਨ',
@@ -109,7 +109,7 @@ const useLanguageStore = create(
           
           // Hardware  
           'hardware.title': 'ਮਿਲਟਰੀ-ਗ੍ਰੇਡ IoT ਸੈਂਸਰ',
-          'hardware.subtitle': 'ਪੰਜਾਬ ਦੀਆਂ ਕਠੋਰ ਮੌਸਮੀ ਸਥਿਤੀਆਂ ਦਾ ਸਾਮਣਾ ਕਰਨ ਲਈ ਬਣਾਏ ਗਏ',
+          'hardware.subtitle': 'ਭਾਰਤ ਦੀਆਂ ਕਠੋਰ ਮੌਸਮੀ ਸਥਿਤੀਆਂ ਦਾ ਸਾਮਣਾ ਕਰਨ ਲਈ ਬਣਾਏ ਗਏ',
           'hardware.features.solar': 'ਸੋਲਰ ਸੰਚਾਲਿਤ',
           'hardware.features.waterproof': 'IP67 ਵਾਟਰਪ੍ਰੂਫ',
           'hardware.features.range': '10km ਰੇਂਜ',
@@ -151,7 +151,7 @@ const useLanguageStore = create(
           'nav.app': 'मोबाइल ऐप',
           
           // Hero Section
-          'hero.title': 'पंजाब के भविष्य के लिए स्मार्ट खेती',
+          'hero.title': 'भारत के भविष्य के लिए स्मार्ट खेती',
           'hero.subtitle': 'IoT-संचालित सटीक कृषि जो पानी बचाती है, उत्पादन बढ़ाती है, और मुनाफे को अधिकतम करती है',
           'hero.cta': 'फील्ड डेमो बुक करें',
           'hero.stats.farmers': '10,000+ किसान',
@@ -172,7 +172,7 @@ const useLanguageStore = create(
           
           // Hardware
           'hardware.title': 'मिलिट्री-ग्रेड IoT सेंसर',
-          'hardware.subtitle': 'पंजाब की कठोर मौसमी परिस्थितियों का सामना करने के लिए बनाए गए',
+          'hardware.subtitle': 'भारत की कठोर मौसमी परिस्थितियों का सामना करने के लिए बनाए गए',
           'hardware.features.solar': 'सोलर संचालित',
           'hardware.features.waterproof': 'IP67 वॉटरप्रूफ',
           'hardware.features.range': '10km रेंज',
