@@ -349,7 +349,7 @@ const FarmerSchemes = () => {
         >
           <h2 className="text-3xl font-bold mb-4">Need Help with Applications?</h2>
           <p className="text-primary-100 text-lg mb-6">
-            Our AgriTech experts can help you navigate and apply for the right schemes
+            Our RKD iNTELLI-TECH experts can help you navigate and apply for the right schemes
           </p>
           <button className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
             Get Expert Assistance

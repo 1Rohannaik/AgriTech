@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">A</span>
               </div>
-              <span className="text-xl font-bold text-white">AgriTech</span>
+              <span className="text-xl font-bold text-white">RKD iNTELLI-TECH</span>
             </div>
             <p className="text-gray-400 dark:text-gray-300 text-sm">
               Revolutionizing agriculture in India with IoT-powered smart farming solutions.
@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Mail className="w-4 h-4" />
-                <span>hello@agritech.com</span>
+                <span>hello@RKD iNTELLI-TECH.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <MapPin className="w-4 h-4" />
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 AgriTech. All rights reserved. Built for India's farmers.</p>
+          <p>&copy; 2024 RKD iNTELLI-TECH. All rights reserved. Built for India's farmers.</p>
         </div>
       </div>
     </footer>

@@ -22,7 +22,7 @@ const SuccessMap = () => {
             Success Stories Across India
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Real farmers, real results. See how AgriTech is transforming agriculture across India
+            Real farmers, real results. See how RKD iNTELLI-TECH is transforming agriculture across India
           </p>
         </motion.div>
 

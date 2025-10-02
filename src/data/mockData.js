@@ -1,4 +1,4 @@
-// Mock data for the AgriTech IoT platform
+// Mock data for the RKD iNTELLI-TECH IoT platform
 
 export const farmSensorData = {
   soilMoisture: {

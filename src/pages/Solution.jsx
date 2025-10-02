@@ -61,7 +61,7 @@ const Solution = () => {
         >
           <Brain className="w-16 h-16 text-primary-600 dark:text-primary-400 mx-auto mb-4" />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            How AgriTech Works
+            How RKD iNTELLI-TECH Works
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             A simple, intelligent approach to modern farming that puts technology to work for India's farmers
@@ -213,7 +213,7 @@ const Solution = () => {
           className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-8 text-white"
         >
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Why Farmers Choose AgriTech</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Farmers Choose RKD iNTELLI-TECH</h2>
             <p className="text-primary-100 text-lg">
               Real benefits that impact your bottom line
             </p>

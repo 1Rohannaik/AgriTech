@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <BrainLogo className="w-8 h-8" color="#059669" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">AgriTech</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">RKD iNTELLI-TECH</span>
           </Link>
 
           {/* Desktop Navigation */}
