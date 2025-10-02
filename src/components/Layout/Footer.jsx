@@ -1,7 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import useLanguageStore from '../../store/useLanguageStore';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
+import useLanguageStore from "../../store/useLanguageStore";
+import logo from "../../assets/logo.png"; // Ensure you have a logo image in the specified path
 
 const Footer = () => {
   const { t } = useLanguageStore();
@@ -13,13 +22,22 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">A</span>
-              </div>
-              <span className="text-xl font-bold text-white">RKD iNTELLI-TECH</span>
+              </div> */}
+              <img
+                // IMPORTANT: Replace this placeholder URL with your actual logo image URL
+                src={logo}
+                alt="RKD INTELLI-TECH Company Logo"
+                className="w-8 h-8 rounded-full object-cover"
+              />
+              <span className="text-xl font-bold text-white">
+                RKD iNTELLI-TECH
+              </span>
             </div>
             <p className="text-gray-400 dark:text-gray-300 text-sm">
-              Revolutionizing agriculture in India with IoT-powered smart farming solutions.
+              Revolutionizing agriculture in India with IoT-powered smart
+              farming solutions.
             </p>
             <div className="flex space-x-4">
               <Facebook className="w-5 h-5 text-gray-400 dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-300 cursor-pointer transition-colors duration-200" />
@@ -33,17 +51,29 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <Link to="/" className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200">
-                {t('nav.home')}
+              <Link
+                to="/"
+                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
+              >
+                {t("nav.home")}
               </Link>
-              <Link to="/roi-calculator" className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200">
-                {t('nav.roi')}
+              <Link
+                to="/roi-calculator"
+                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
+              >
+                {t("nav.roi")}
               </Link>
-              <Link to="/hardware" className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200">
-                {t('nav.hardware')}
+              <Link
+                to="/hardware"
+                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
+              >
+                {t("nav.hardware")}
               </Link>
-              <Link to="/success-map" className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200">
-                {t('nav.map')}
+              <Link
+                to="/success-map"
+                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
+              >
+                {t("nav.map")}
               </Link>
             </div>
           </div>
@@ -52,10 +82,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <div className="space-y-2 text-sm text-gray-400">
-              <a href="#" className="block hover:text-white">Help Center</a>
-              <a href="#" className="block hover:text-white">Training</a>
-              <a href="#" className="block hover:text-white">Documentation</a>
-              <a href="#" className="block hover:text-white">Community</a>
+              <a href="#" className="block hover:text-white">
+                Help Center
+              </a>
+              <a href="#" className="block hover:text-white">
+                Training
+              </a>
+              <a href="#" className="block hover:text-white">
+                Documentation
+              </a>
+              <a href="#" className="block hover:text-white">
+                Community
+              </a>
             </div>
           </div>
 
@@ -80,7 +118,10 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 RKD iNTELLI-TECH. All rights reserved. Built for India's farmers.</p>
+          <p>
+            &copy; 2024 RKD iNTELLI-TECH. All rights reserved. Built for India's
+            farmers.
+          </p>
         </div>
       </div>
     </footer>
