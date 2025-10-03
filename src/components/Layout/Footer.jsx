@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Mail,
   Phone,
@@ -8,12 +8,41 @@ import {
   Twitter,
   Instagram,
   Linkedin,
+  BookOpen,
 } from "lucide-react";
 import useLanguageStore from "../../store/useLanguageStore";
-import logo from "../../assets/logo.png";
 
 const Footer = () => {
   const { t } = useLanguageStore();
+  const location = useLocation();
+
+  // Determine if we're in farming context
+  const isFarmingContext = location.pathname.includes('/projects/farming') || 
+                          location.pathname.includes('/schemes') ||
+                          location.pathname.includes('/roi-calculator') ||
+                          location.pathname.includes('/hardware') ||
+                          location.pathname.includes('/success-map') ||
+                          location.pathname.includes('/solution') ||
+                          location.pathname.includes('/mobile-app') ||
+                          location.pathname.includes('/login');
+
+  const mainQuickLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/#services', label: 'Services' },
+    { path: '/#team', label: 'Team' },
+    { path: '/ongoing', label: 'Ongoing' },
+    { path: '/contact', label: 'Contact' },
+  ];
+
+  const farmingQuickLinks = [
+    { path: '/projects/farming', label: 'Home' },
+    { path: '/schemes', label: 'Schemes' },
+    { path: '/roi-calculator', label: 'ROI Calculator' },
+    { path: '/hardware', label: 'Hardware' },
+    { path: '/success-map', label: 'Success Map' },
+  ];
+
+  const quickLinks = isFarmingContext ? farmingQuickLinks : mainQuickLinks;
 
   return (
     <footer className="bg-gray-900 dark:bg-gray-950 text-white transition-colors duration-200">
@@ -21,25 +50,33 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <img
-                src={logo}
-                alt="RKD IntelliTech Company Logo"
-                className="w-8 h-8 rounded-full object-cover"
-              />
-              <span className="text-xl font-bold text-white">
-                RKD IntelliTech
-              </span>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-white leading-none">
+                RKD
+              </div>
+              <div className={`text-sm font-medium ${isFarmingContext ? 'text-green-400' : 'text-blue-400'} leading-none mt-1`}>
+                {isFarmingContext ? "Farming" : "IntelliTech"}
+              </div>
             </div>
             <p className="text-gray-400 dark:text-gray-300 text-sm">
-              Revolutionizing agriculture in India with IoT-powered smart
-              farming solutions.
+              {isFarmingContext 
+                ? "Revolutionizing agriculture in India with IoT-powered smart farming solutions."
+                : "Advanced technology solutions in IoT, VLSI, AI, Defense Systems, and Robotics. Transforming innovative ideas into scalable reality."
+              }
             </p>
             <div className="flex space-x-4">
               <Facebook className="w-5 h-5 text-gray-400 dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-300 cursor-pointer transition-colors duration-200" />
               <Twitter className="w-5 h-5 text-gray-400 dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-300 cursor-pointer transition-colors duration-200" />
               <Instagram className="w-5 h-5 text-gray-400 dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-300 cursor-pointer transition-colors duration-200" />
               <Linkedin className="w-5 h-5 text-gray-400 dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-300 cursor-pointer transition-colors duration-200" />
+              <a 
+                href="https://niharikajgupta.medium.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-300 transition-colors duration-200"
+              >
+                <BookOpen className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -47,30 +84,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <Link
-                to="/"
-                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
-              >
-                {t("nav.home")}
-              </Link>
-              <Link
-                to="/roi-calculator"
-                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
-              >
-                {t("nav.roi")}
-              </Link>
-              <Link
-                to="/hardware"
-                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
-              >
-                {t("nav.hardware")}
-              </Link>
-              <Link
-                to="/success-map"
-                className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
-              >
-                {t("nav.map")}
-              </Link>
+              {quickLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  to={link.path}
+                  className="block text-gray-400 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 text-sm transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -108,8 +130,9 @@ const Footer = () => {
               <div className="flex items-start space-x-2 text-sm text-gray-400">
                 <MapPin className="w-4 h-4 mt-1" />
                 <span>
-                  chunchungatta, Konankunte<br />
-                  Bangalore-560062 Karnataka, India
+                  Chunchungatta, Konankunte<br />
+                  Bangalore - 560062<br />
+                  Karnataka, India
                 </span>
               </div>
             </div>
@@ -118,8 +141,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>
-            &copy; 2025 RKD IntelliTech. All rights reserved. Built for India's
-            farmers.
+            &copy; 2025 RKD IntelliTech. All rights reserved.
+            Delivering excellence through innovation and expertise.
           </p>
         </div>
       </div>

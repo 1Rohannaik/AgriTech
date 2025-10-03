@@ -5,7 +5,7 @@ import { Play, Users, TrendingUp, Droplets, ChevronRight } from 'lucide-react';
 import useLanguageStore from '../store/useLanguageStore';
 import Chatbot from '../components/Chatbot';
 
-const Home = () => {
+const FarmingProject = () => {
   const { t } = useLanguageStore();
 
   const features = [
@@ -167,4 +167,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FarmingProject;
