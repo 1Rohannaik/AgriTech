@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* FIXED Logo Section 🚀 
             - Added descriptive 'alt' text.
             - Added 'w-8 h-8' for image sizing.
-            - Included 'RKD iNTELLI-TECH' text for clear branding.
+            - Included 'RKD IntelliTech' text for clear branding.
           */}
           <Link 
             to="/" 
@@ -61,11 +61,11 @@ const Navbar = () => {
             <img 
               // IMPORTANT: Replace this placeholder URL with your actual logo image URL
               src={logo} 
-              alt="RKD INTELLI-TECH Company Logo" 
+              alt="RKD IntelliTech Company Logo" 
               className="w-8 h-8 rounded-full object-cover"
             />
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              RKD iNTELLI-TECH
+              RKD IntelliTech
             </span>
           </Link>
 

@@ -10,7 +10,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import useLanguageStore from "../../store/useLanguageStore";
-import logo from "../../assets/logo.png"; // Ensure you have a logo image in the specified path
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   const { t } = useLanguageStore();
@@ -22,17 +22,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              {/* <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div> */}
               <img
-                // IMPORTANT: Replace this placeholder URL with your actual logo image URL
                 src={logo}
-                alt="RKD INTELLI-TECH Company Logo"
+                alt="RKD IntelliTech Company Logo"
                 className="w-8 h-8 rounded-full object-cover"
               />
               <span className="text-xl font-bold text-white">
-                RKD iNTELLI-TECH
+                RKD IntelliTech
               </span>
             </div>
             <p className="text-gray-400 dark:text-gray-300 text-sm">
@@ -103,15 +99,18 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Phone className="w-4 h-4" />
-                <span>+91 98765 43210</span>
+                <span>+91 9480478469</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Mail className="w-4 h-4" />
-                <span>hello@RKD iNTELLI-TECH.com</span>
+                <span>solutions@rkdintellitech.in</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-gray-400">
-                <MapPin className="w-4 h-4" />
-                <span>Ludhiana, India</span>
+              <div className="flex items-start space-x-2 text-sm text-gray-400">
+                <MapPin className="w-4 h-4 mt-1" />
+                <span>
+                  chunchungatta, Konankunte<br />
+                  Bangalore-560062 Karnataka, India
+                </span>
               </div>
             </div>
           </div>
@@ -119,7 +118,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>
-            &copy; 2024 RKD iNTELLI-TECH. All rights reserved. Built for India's
+            &copy; 2025 RKD IntelliTech. All rights reserved. Built for India's
             farmers.
           </p>
         </div>

@@ -70,29 +70,28 @@ const Auth = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center py-12 px-4 transition-colors duration-200">
       <div className="max-w-md w-full">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-8"
-        >
-          <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center">
-              <span className="text-white font-bold text-2xl">A</span>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-8"
+          >
+            <div className="flex justify-center mb-4">
+              <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center">
+                <User className="text-white w-8 h-8" />
+              </div>
             </div>
-          </div>
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-            {step === 1 ? (isLogin ? 'Welcome Back' : 'Join RKD iNTELLI-TECH') : 'Verify OTP'}
-          </h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            {step === 1 
-              ? (isLogin ? 'Sign in to your account' : 'Create your farmer account')
-              : `We've sent a 6-digit OTP to ${formData.mobile}`
-            }
-          </p>
-        </motion.div>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+              {step === 1 ? (isLogin ? 'Welcome Back' : 'Join RKD IntelliTech') : 'Verify OTP'}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400">
+              {step === 1 
+                ? (isLogin ? 'Sign in to your account' : 'Create your farmer account')
+                : `We've sent a 6-digit OTP to ${formData.mobile}`
+              }
+            </p>
+          </motion.div>
 
-        {/* Auth Form */}
+          {/* Auth Form */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}

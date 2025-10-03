@@ -293,7 +293,7 @@ const MobileApp = () => {
         >
           <Smartphone className="w-16 h-16 text-primary-600 dark:text-primary-400 mx-auto mb-4" />
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            RKD iNTELLI-TECH Mobile App Preview
+            RKD IntelliTech Mobile App Preview
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Experience the power of smart farming in the palm of your hand
@@ -316,7 +316,7 @@ const MobileApp = () => {
                     {/* Status Bar */}
                     <div className="bg-gray-50 dark:bg-gray-700 px-6 py-3 flex justify-between items-center text-xs font-medium text-gray-900 dark:text-gray-100">
                       <span>9:41</span>
-                      <span>RKD iNTELLI-TECH</span>
+                      <span>RKD IntelliTech</span>
                       <div className="flex space-x-1">
                         <div className="w-4 h-2 bg-green-500 rounded-sm"></div>
                         <div className="w-1 h-2 bg-gray-300 rounded-sm"></div>
@@ -435,7 +435,7 @@ const MobileApp = () => {
 
             {/* Download Section */}
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Download the RKD iNTELLI-TECH App</h3>
+              <h3 className="text-2xl font-bold mb-4">Download the RKD IntelliTech App</h3>
               <p className="text-primary-100 mb-6">
                 Available for Android and iOS. Works offline and syncs when connected.
               </p>

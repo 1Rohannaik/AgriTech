@@ -115,7 +115,7 @@ const Hardware = () => {
                   </div>
                   
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-2">RKD iNTELLI-TECH IoT Hub</h3>
+                    <h3 className="text-2xl font-bold mb-2">RKD IntelliTech IoT Hub</h3>
                     <p className="text-primary-100">All-in-one smart farming solution</p>
                   </div>
                 </motion.div>

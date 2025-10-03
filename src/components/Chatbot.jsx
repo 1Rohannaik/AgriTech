@@ -9,7 +9,7 @@ const Chatbot = () => {
     {
       id: 1,
       type: 'bot',
-      message: 'Hello! I\'m your RKD iNTELLI-TECH assistant. How can I help you today?',
+      message: 'Hello! I\'m your RKD IntelliTech assistant. How can I help you today?',
       timestamp: new Date().toLocaleTimeString()
     }
   ]);
@@ -75,7 +75,7 @@ const Chatbot = () => {
   ];
 
   const botResponses = {
-    'hello': 'Hello! Welcome to RKD iNTELLI-TECH. I\'m here to help you with all your smart farming questions.',
+    'hello': 'Hello! Welcome to RKD IntelliTech. I\'m here to help you with all your smart farming questions.',
     'pricing': 'Our IoT farming solutions start from ₹25,000 per acre. This includes sensors, controllers, and mobile app access. Would you like to know more about specific packages?',
     'irrigation': 'Smart irrigation uses soil moisture sensors and weather data to automatically water your crops only when needed. This can save up to 40% water while increasing yields by 30%.',
     'sensors': 'Our IoT sensors are easy to install with plug-and-play technology. Installation typically takes under 2 hours and includes soil moisture sensors, weather stations, and pump controllers.',
@@ -198,7 +198,7 @@ const Chatbot = () => {
                   <Bot className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">RKD iNTELLI-TECH Assistant</h3>
+                  <h3 className="font-semibold">RKD IntelliTech Assistant</h3>
                   <p className="text-xs text-primary-100">Online • Instant replies</p>
                 </div>
               </div>
